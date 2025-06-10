@@ -1,0 +1,100 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+#header {
+    border-bottom: 1px solid #ddd;
+}
+
+#header .hd_wrap .inner {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 8rem;
+}
+
+#header .hd_wrap .inner h1 img {
+    width: 16rem;
+    height: 100%;
+}
+
+#header .hd_wrap .inner .gnb>ul {
+    display: flex;
+    gap: 4rem;
+}
+
+#header .hd_wrap .inner .gnb>ul>li>a {
+    display: block;
+    line-height: 8rem;
+    font-size: 1.9rem;
+}
+
+
+#header .hd_wrap .inner .utils {
+    display: flex;
+    gap: 1rem;
+}
+
+.main_visual {
+    position: relative;
+}
+
+.main_visual .main_visual_slide .itm {
+    position: relative;
+    height: calc(100vh - 80px);
+    overflow: hidden;
+    /*overflow: hidden 꼭 적어야 parallax슬라이드가 구현된다.*/
+}
+
+.main_visual .main_visual_slide .itm .bg {
+    position: absolute;
+    inset: 0 0 0 0;
+}
+
+.main_visual .main_visual_slide .itm01 .bg {
+    background: url(../images/main_visual01.jpg) no-repeat center center/cover;
+}
+
+.main_visual .main_visual_slide .itm02 .bg {
+    background: url(../images/main_visual02.jpg) no-repeat center top/cover;
+}
+
+.main_visual .main_visual_slide .itm03 .bg {
+    background: url(../images/main_visual03.jpg) no-repeat center center/cover;
+}
+
+
+.main_visual .slg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    max-width: 144rem;
+    margin: 0 auto;
+    width: 100%;
+
+    flex-direction: column;
+}
+
+.main_visual .itm01 .slg strong {
+    color: #333;
+}
+
+.main_visual .itm01 .slg p {
+    color: #333;
+}
+
+.main_visual .itm03 .slg strong {
+    color: #333;
+}
+
+.main_visual .itm03 .slg p {
+    color: #333;
+}
