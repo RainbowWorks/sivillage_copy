@@ -12,9 +12,43 @@
     margin: 0 auto;
 }
 
+.default {
+    padding: 8rem 0;
+}
+
+.default .title h2 {
+    font-size: 4rem;
+    font-weight: 600;
+    margin-bottom: 1.6rem;
+    text-align: center;
+}
+
+.default strong {
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    font-weight: 500;
+    display: block;
+    text-align: center;
+}
+
+.default p {
+    color: #6d6d6d;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    text-align: center;
+}
+
+.default .price_wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    font-size: 1.5rem;
+    line-height: 2.4rem;
+}
 
 .slg strong {
-    font-size: 4rem;
+    font-size: 5.6rem;
     font-weight: 700;
     color: #fff;
 }
@@ -23,6 +57,22 @@
     margin-top: 1.6rem;
     margin-bottom: 4rem;
     color: #fff;
-    font-size: 1.6rem;
+    font-size: 2.4rem;
     font-weight: 400;
+}
+
+
+.default_btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 0 2.4rem;
+    height: 4rem;
+    background: transparent;
+
+    border: 1px solid #333;
+
+    white-space: nowrap;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    font-weight: 500;
 }

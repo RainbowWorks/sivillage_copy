@@ -26,7 +26,7 @@ body {
 
 #header .hd_wrap .inner .gnb>ul {
     display: flex;
-    gap: 4rem;
+    gap: 3rem;
 }
 
 #header .hd_wrap .inner .gnb>ul>li>a {
@@ -97,4 +97,179 @@ body {
 
 .main_visual .itm03 .slg p {
     color: #333;
+}
+
+.main_visual .main_visual_slide .itm02 .default_btn {
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.main_product .tab_product {
+    display: flex;
+    justify-content: center;
+}
+
+.main_product .tab_product button {
+    position: relative;
+    height: 4rem;
+    padding: 0 1.6rem;
+    border-bottom: 1px solid #ddd;
+    color: #929292;
+}
+
+.main_product .tab_product button.on {
+    color: #333;
+}
+
+.main_product .tab_product button:hover {
+    color: #333;
+}
+
+.main_product .tab_product button::after {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 0;
+    height: 1px;
+    background: #333;
+    transition: 0.5s;
+}
+
+.main_product .tab_product button.on::after {
+    width: 100%;
+}
+
+.main_product .tab_product_content {}
+
+.main_product .tab_product_content .imb_box {
+    display: flex;
+    justify-content: center;
+    height: 48rem;
+    margin-bottom: 2rem;
+}
+
+.main_product .tab_product_content img {
+    width: 100%;
+    height: 48rem;
+    object-fit: cover;
+    display: block;
+}
+
+.main_product .tab_product_content .con {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    visibility: hidden;
+    height: 0;
+    overflow: hidden;
+}
+
+.main_product .tab_product_content .con.on {
+    visibility: visible;
+    height: auto;
+}
+
+.main_product .tab_product_content .con>* {
+    flex: 0 0 337.5px;
+}
+
+.main_product.default .price_wrap span.price {
+    font-weight: 600;
+}
+
+.main_product.default .price_wrap span.discount {
+    color: #da291c;
+}
+
+.main_banner {
+    position: relative;
+    padding: 30rem 0;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.25) 90%), url(../images/main_banner01.jpg) no-repeat center top/cover;
+
+}
+
+.main_banner .inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 100%;
+
+}
+
+.main_banner .title {
+    color: #fff;
+}
+
+.main_banner .title h2 {
+    font-size: 4rem;
+    font-weight: 600;
+    margin-bottom: 1.6rem;
+}
+
+.main_banner .title .default_btn {
+    border: 1px solid #fff;
+    margin-top: 4rem;
+}
+
+* {
+    outline: 1px solid tomato--;
+}
+
+#footer {
+    padding: 64px 0;
+    background: #f6f6f6;
+}
+
+
+#footer .inner {
+    display: flex;
+    flex-direction: column;
+    /*flex방향을바꿔준다*/
+    align-items: center;
+}
+
+#footer .customer {
+    display: flex;
+    gap: 2.4rem;
+
+    font-size: 1.5rem;
+    line-height: 1.6rem;
+
+    margin-bottom: 2.4rem;
+}
+
+#footer p {
+    display: flex;
+    gap: 3.2rem;
+
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+
+    margin: 4px;
+}
+
+#footer p span {
+    position: relative;
+}
+
+#footer p span~span::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -1.6rem;
+    width: 1px;
+    height: 0.5em;
+    background: #333;
+
+    transform: translate(0, -50%);
+}
+
+#footer address {
+    margin-top: 2.4rem;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
 }
