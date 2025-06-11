@@ -1,0 +1,6 @@
+
+
+to top 만들고 반응형에 none
+main_visual 오토슬라이드
+main_visual 스크롤바
+header 메뉴추가, fixed, height늘리기

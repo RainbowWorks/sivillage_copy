@@ -16,7 +16,7 @@ body {
     justify-content: space-between;
     align-items: center;
 
-    height: 8rem;
+    height: 9.6rem;
 }
 
 #header .hd_wrap .inner h1 img {
@@ -31,7 +31,7 @@ body {
 
 #header .hd_wrap .inner .gnb>ul>li>a {
     display: block;
-    line-height: 8rem;
+    line-height: 9.6rem;
     font-size: 1.9rem;
 }
 
@@ -47,7 +47,7 @@ body {
 
 .main_visual .main_visual_slide .itm {
     position: relative;
-    height: calc(100vh - 80px);
+    height: calc(100vh - 96px);
     overflow: hidden;
     /*overflow: hidden 꼭 적어야 parallax슬라이드가 구현된다.*/
 }
@@ -66,7 +66,7 @@ body {
 }
 
 .main_visual .main_visual_slide .itm03 .bg {
-    background: url(../images/main_visual03.jpg) no-repeat center center/cover;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.25) 10%, transparent 90%), url(../images/main_visual03.jpg) no-repeat center center/cover;
 }
 
 
@@ -112,9 +112,10 @@ body {
 .main_product .tab_product button {
     position: relative;
     height: 4rem;
-    padding: 0 1.6rem;
+    padding: 0 2.4rem;
     border-bottom: 1px solid #ddd;
     color: #929292;
+    margin-bottom: 2.4rem;
 }
 
 .main_product .tab_product button.on {
@@ -147,7 +148,6 @@ body {
     display: flex;
     justify-content: center;
     height: 48rem;
-    margin-bottom: 2rem;
 }
 
 .main_product .tab_product_content img {
@@ -186,7 +186,7 @@ body {
 .main_banner {
     position: relative;
     padding: 30rem 0;
-    background: linear-gradient(transparent, rgba(0, 0, 0, 0.25) 90%), url(../images/main_banner01.jpg) no-repeat center top/cover;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.25) 10%, transparent 90%), url(../images/main_banner01.jpg) no-repeat center top/cover;
 
 }
 
@@ -213,6 +213,44 @@ body {
 .main_banner .title .default_btn {
     border: 1px solid #fff;
     margin-top: 4rem;
+}
+
+.main_promotion .inner {
+    display: flex;
+    gap: 3rem;
+}
+
+.main_promotion .inner .itm {
+    position: relative;
+    flex: 1;
+}
+
+.main_promotion .inner .itm .txt {
+    position: absolute;
+    left: 50%;
+    bottom: 6.4rem;
+    transform: translate(-50%, 0);
+    color: #fff;
+}
+
+.main_promotion .inner .itm .txt p {
+    color: #fff;
+    white-space: nowrap;
+}
+
+.main_promotion .inner .itm .default_btn {
+    border: 1px solid #fff;
+}
+
+.main_promotion .inner .itm figure {
+    position: relative;
+}
+
+.main_promotion .inner .itm figure::before {
+    content: "";
+    position: absolute;
+    inset: 0 0 0 0;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.5) 90%);
 }
 
 * {
