@@ -100,6 +100,106 @@ body {
     gap: 1rem;
 }
 
+.mbtn {
+    display: none;
+}
+
+@media (max-width:768px) {
+    #header .hd_wrap .inner .gnb {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        z-index: 999;
+
+        background: #fff;
+        border-right: 1px solid #ddd;
+
+        height: 200vh;
+        width: calc(100% - 144px);
+
+        padding: 12rem 2.4rem 0 2.4rem;
+    }
+
+    #header .hd_wrap .inner .gnb.on {
+        /* 반응형 */
+        left: 0;
+    }
+
+
+    #header .hd_wrap .inner .gnb>ul {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    #header .hd_wrap .inner .gnb>ul>li>a {
+        line-height: 4rem;
+        border-top: 1px solid #ddd;
+        border-bottom: none;
+    }
+
+    #header .gnb>ul>li>ul a {
+        background: #fff;
+        border: 1px solid #ddd;
+        border-bottom: none;
+    }
+
+
+    #header .gnb>ul>li {
+        position: relative;
+    }
+
+    #header .gnb>ul>li ul {
+        position: static;
+        transform: translate(0, 0);
+        visibility: visible;
+        opacity: 1;
+        transition: none;
+
+        display: none;
+        padding: 0 0;
+        box-shadow: none;
+    }
+
+    #header .gnb>ul>li:hover ul {
+        display: block;
+        opacity: 1;
+        visibility: visible;
+        transform: translate(0, 0);
+    }
+
+    #header .gnb>ul>li:focus-within ul {
+        transform: translate(0, 0);
+    }
+
+    #header .gnb>ul>li ul a {
+        background: #f9f9f9;
+    }
+
+    .hamburger-inner,
+    .hamburger-inner::before,
+    .hamburger-inner::after {
+        height: 2.5px;
+    }
+
+    .mbtn {
+        display: block;
+        position: absolute;
+        top: 1.6rem;
+        right: 8px;
+        z-index: 1000;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    #header .hd_wrap .inner .utils {
+        display: none;
+    }
+}
+
+
+
 .main_visual {
     position: relative;
 }
@@ -373,13 +473,14 @@ body {
 
     width: 100%;
 
-    max-width: 600px;
+    max-width: 400px;
     background: #ddd;
 }
 
 .main_deal .page_bar span {
     background: #111;
 }
+
 
 .main_promotion {
     background: #f2f2f2;
@@ -439,7 +540,7 @@ body {
 
 
 * {
-    outline: 1px solid tomato;
+    outline: 1px solid tomato--;
 }
 
 #footer {

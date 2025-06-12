@@ -1,4 +1,14 @@
 $(function () {
+    $('.mbtn').on('click', function () {
+        $(this).toggleClass('is-active')
+        $('.gnb').toggleClass('on')
+        /*active를 붙여도 된다. 일반적으로는 on 사용한다.*/
+        $('#header .hd_wrap h1').toggleClass('on')
+    })
+});
+
+
+$(function () {
     const main_visual_slide = new Swiper('.main_visual_slide', {
         loop: true,
         parallax: true,
@@ -23,6 +33,27 @@ $(function () {
             el: ".page_bar",
             type: "progressbar",
         },
+        slidesPerView: 4,
+        breakpoints: {
+            1440: {
+                slidesPerView: 4,
+            },
+            1200: {
+                slidesPerView: 3,
+            },
+            960: {
+                slidesPerView: 2.5,
+            },
+            540: {
+                slidesPerView: 2,
+            },
+            480: {
+                slidesPerView: 1,
+            },
+            0: {
+                slidesPerView: 1,
+            },
+        }
     });
 
 });
