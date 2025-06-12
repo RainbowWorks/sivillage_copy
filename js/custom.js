@@ -2,7 +2,27 @@ $(function () {
     const main_visual_slide = new Swiper('.main_visual_slide', {
         loop: true,
         parallax: true,
-        speed: 1000,
+        speed: 1000, arrows: false,
+        autoplay: true,
+        autoplaySpeed: 6000,
+        pauseOnHover: false,
+    });
+
+    const main_deal_slide = new Swiper('.main_deal_slide', {/*옵션입력*/
+        loop: true,
+        slidesPerView: 4, /*swiperjs에서 받아왔음*/
+        spaceBetween: 80, /*swiperjs에서 받아왔음*/
+        autoplay: {
+            delay: 0, /*0이면 머무르는 시간이 0초*/
+            disableOnInteraction: false,
+        }, /*swiperjs에서 받아왔음*/
+
+        speed: 5000, /*2500은 2.5초이다*/
+
+        pagination: {
+            el: ".page_bar",
+            type: "progressbar",
+        },
     });
 
 });
