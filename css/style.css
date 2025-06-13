@@ -134,8 +134,13 @@ body {
 
     #header .hd_wrap .inner .gnb>ul>li>a {
         line-height: 4rem;
-        border-top: 1px solid #ddd;
+
         border-bottom: none;
+    }
+
+    #header .hd_wrap .inner .gnb>ul>li~li>a {
+        /* li~li 형제라서 맨위에 border을 빼고 넣어준다. */
+        border-top: 1px solid #ddd;
     }
 
     #header .gnb>ul>li>ul a {
@@ -855,7 +860,7 @@ body {
         border: 1px solid #fff;
 
         /*  */
-        margin-top: 4px;
+        margin-top: 1.6rem;
         padding: 0 1.6rem;
         height: 3.2rem;
 
@@ -932,7 +937,7 @@ body {
         border: 1px solid #fff;
 
         /*  */
-        margin-top: 4px;
+        margin-top: 1.6rem;
         padding: 0 1.6rem;
         height: 3.2rem;
 
@@ -1110,8 +1115,8 @@ body {
         /*  */
 
 
-        font-size: 2.5vw;
-        gap: 4px;
+        font-size: 2vw;
+        gap: 8px;
     }
 
     #footer p {
@@ -1126,7 +1131,7 @@ body {
         /*  */
 
         flex-direction: column;
-        font-size: 2.5vw;
+        font-size: 2vw;
         gap: 0;
         text-align: center;
     }
@@ -1160,7 +1165,7 @@ body {
 
         /*  */
 
-        font-size: 2.5vw;
+        font-size: 2vw;
         gap: 0;
         text-align: center;
     }
