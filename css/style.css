@@ -705,6 +705,27 @@ body {
         font-size: clamp(1.4rem, 1.5vw, 1.8rem);
         line-height: 2.4rem;
     }
+
+
+    .main_deal .page_bar {
+        position: absolute;
+        top: auto;
+        bottom: 40px;
+        left: auto;
+        right: auto;
+        height: 2px;
+
+        left: 50%;
+        transform: translate(-50%, 0);
+
+        width: 100%;
+
+        max-width: 400px;
+        background: #ddd;
+
+        /*  */
+        max-width: 200px;
+    }
 }
 
 .main_promotion {
