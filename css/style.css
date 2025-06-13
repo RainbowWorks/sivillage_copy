@@ -451,7 +451,10 @@ body {
     width: 100%;
 }
 
-
+.main_product .tab_product_content {
+    max-width: 144rem;
+    margin: 0 auto;
+}
 
 .main_product .tab_product_content strong {
     margin-top: 2.4rem;
@@ -760,7 +763,7 @@ body {
 }
 
 
-@media (max-width:1440px) {
+@media (max-width:1320px) {
 
     .main_promotion {
         background: #f2f2f2;
@@ -796,6 +799,9 @@ body {
         left: 50%;
         transform: translate(-50%, 0);
         color: #fff;
+
+        /*  */
+        top: 60%;
     }
 
 
@@ -805,6 +811,8 @@ body {
         white-space: nowrap;
         text-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
 
+        /*  */
+        font-size: 1.2vw;
 
     }
 
@@ -815,7 +823,10 @@ body {
         white-space: nowrap;
         text-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
 
-
+        /*  */
+        font-size: 1.2vw;
+        white-space: normal;
+        line-height: 1.2;
     }
 
     .main_promotion .inner .itm .default_btn {
@@ -1051,4 +1062,85 @@ body {
     line-height: 1.6rem;
 }
 
-@media (max-width: 768px) {}
+@media (max-width: 768px) {
+    #footer {
+        border-top: 1px solid #ddd;
+        padding: 64px 0;
+        background: #f9f9f9;
+    }
+
+
+    #footer .inner {
+        display: flex;
+        flex-direction: column;
+        /*flex방향을바꿔준다*/
+        align-items: center;
+    }
+
+    #footer .customer {
+        display: flex;
+        gap: 2.4rem;
+
+        font-size: 1.5rem;
+        line-height: 1.6rem;
+
+        margin-bottom: 2.4rem;
+
+        /*  */
+
+
+        font-size: 2.5vw;
+        gap: 4px;
+    }
+
+    #footer p {
+        display: flex;
+        gap: 3.2rem;
+
+        font-size: 1.4rem;
+        line-height: 1.6rem;
+
+        margin: 4px;
+
+        /*  */
+
+        flex-direction: column;
+        font-size: 2.5vw;
+        gap: 0;
+        text-align: center;
+    }
+
+    #footer p span {
+        position: relative;
+
+        /*  */
+
+    }
+
+    #footer p span~span::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: -1.6rem;
+        width: 1px;
+        height: 0.5em;
+        background: #333;
+
+        transform: translate(0, -50%);
+
+        /*  */
+        display: none;
+    }
+
+    #footer address {
+        margin-top: 2.4rem;
+        font-size: 1.2rem;
+        line-height: 1.6rem;
+
+        /*  */
+
+        font-size: 2.5vw;
+        gap: 0;
+        text-align: center;
+    }
+}
