@@ -450,18 +450,7 @@ body {
     width: 100%;
 }
 
-.main_product .tab_product_content .img_box {
-    display: flex;
-    justify-content: center;
-    height: 48rem;
-}
 
-.main_product .tab_product_content img {
-    width: 100%;
-    height: 48rem;
-    object-fit: cover;
-    display: block;
-}
 
 .main_product .tab_product_content strong {
     margin-top: 2.4rem;
@@ -481,9 +470,6 @@ body {
     height: auto;
 }
 
-.main_product .tab_product_content .con>* {
-    flex: 0 0 337.5px;
-}
 
 .main_product.default .price_wrap span.price {
     font-weight: 600;
@@ -491,6 +477,89 @@ body {
 
 .main_product.default .price_wrap span.discount {
     color: #da291c;
+}
+
+@media (max-width: 768px) {
+
+    .main_product .tab_product {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .main_product .tab_product button {
+
+        position: relative;
+        height: 4rem;
+        padding: 0 2.4rem;
+        border-bottom: 1px solid #ddd;
+        color: #929292;
+        margin-bottom: 3.6rem;
+
+        /*  */
+        height: 2.4rem;
+        padding: 0 1.6rem;
+        margin-bottom: 1.6rem;
+
+        font-size: clamp(12px, 2vw, 18px);
+        white-space: normal;
+        text-align: center;
+
+    }
+
+    .main_product .tab_product button.on {
+        color: #333;
+
+    }
+
+    .main_product .tab_product button:hover {
+        color: #333;
+    }
+
+    .main_product .tab_product button::after {
+        content: "";
+        position: absolute;
+        bottom: -1px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        width: 0;
+        height: 1px;
+        background: #333;
+        transition: 0.5s;
+    }
+
+    .main_product .tab_product button.on::after {
+        width: 100%;
+    }
+
+
+
+
+
+    .main_product .tab_product_content strong {
+        margin-top: 2.4rem;
+    }
+
+    .main_product .tab_product_content .con {
+        /*  */
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+
+    .main_product .tab_product_content .con.on {
+        visibility: visible;
+        height: auto;
+    }
+
+
+    .main_product.default .price_wrap span.price {
+        font-weight: 600;
+    }
+
+    .main_product.default .price_wrap span.discount {
+        color: #da291c;
+    }
 }
 
 .main_banner {
@@ -750,3 +819,5 @@ body {
     font-size: 1.2rem;
     line-height: 1.6rem;
 }
+
+@media (max-width: 768px) {}
